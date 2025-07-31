@@ -1,0 +1,15 @@
+{
+  "feedbackSurveyState": {
+    "lastShownTime": 1753976658498
+  },
+  "permissions": {
+    "allow": [
+      "Bash(gh pr list *)",
+      "Bash(gh pr comment *)",
+      "Bash(sbt test)",
+      "Bash(sbt compile)",
+      "Bash(gh pr create *)"
+    ],
+    "deny": []
+  }
+}
