@@ -1,17 +1,21 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gh pr list *)",
-      "Bash(gh pr comment *)",
-      "Bash(gh pr create *)",
+      "Bash(gh pr *)",
 
       "Bash(git checkout *)",
       "Bash(git commit *)",
       "Bash(git push *)",
-      "Bash(gh pr create *)",
 
-      "Bash(sbt test)",
-      "Bash(sbt compile)"
+      "Bash(sbt *)",
+
+      "Edit",
+
+      "MultiEdit",
+
+      "WebFetch",
+
+      "Write"
     ],
     "deny": []
   },
