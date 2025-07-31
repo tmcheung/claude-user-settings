@@ -1,25 +1,55 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find *)",
-      "Bash(gh pr *)",
-      "Bash(git checkout *)",
-      "Bash(git commit *)",
-      "Bash(git push *)",
-
-      "Bash(sbt *)",
-
+      "Bash(find:*)",
+      "Bash(gh pr:*)",
+      "Bash(git checkout:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(sbt:*)",
       "Edit",
-
       "MultiEdit",
-
       "WebFetch",
-
       "Write"
     ],
     "deny": []
   },
   "feedbackSurveyState": {
-    "lastShownTime": 1753984110888
+    "lastShownTime": 1753986590084
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "terminal-notifier -title 'Claude needs your attention' -message 'Claude code assistant needs your input.'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "terminal-notifier -title 'Claude stopped working' -message 'Claude code assistant finished responding.'"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "terminal-notifier -title 'Claude subagent stopped working' -message 'Claude code subagent finished responding.'"
+          }
+        ]
+      }
+    ]
   }
 }
