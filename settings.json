@@ -1,15 +1,21 @@
 {
-  "feedbackSurveyState": {
-    "lastShownTime": 1753976658498
-  },
   "permissions": {
     "allow": [
       "Bash(gh pr list *)",
       "Bash(gh pr comment *)",
+      "Bash(gh pr create *)",
+
+      "Bash(git checkout *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(gh pr create *)",
+
       "Bash(sbt test)",
-      "Bash(sbt compile)",
-      "Bash(gh pr create *)"
+      "Bash(sbt compile)"
     ],
     "deny": []
+  },
+  "feedbackSurveyState": {
+    "lastShownTime": 1753984110888
   }
 }
