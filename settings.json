@@ -1,8 +1,8 @@
 {
   "permissions": {
     "allow": [
+      "Bash(find *)",
       "Bash(gh pr *)",
-
       "Bash(git checkout *)",
       "Bash(git commit *)",
       "Bash(git push *)",
