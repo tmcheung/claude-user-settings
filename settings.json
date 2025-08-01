@@ -24,7 +24,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -title 'Claude needs your attention' -message 'Claude code assistant needs your input.'"
+            "command": "terminal-notifier -group 'CLAUDE_CODE' -message '❗️Claude Code Needs Attention' -subtitle \"\" -sound Glass"
           }
         ]
       }
@@ -35,7 +35,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -title 'Claude stopped working' -message 'Claude code assistant finished responding.'"
+            "command": "terminal-notifier -group 'CLAUDE_CODE' -message '🏁Claude Code Stopped' -subtitle \"\" -sound Glass"
           }
         ]
       }
@@ -46,7 +46,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -title 'Claude subagent stopped working' -message 'Claude code subagent finished responding.'"
+            "command": "terminal-notifier -group 'CLAUDE_CODE' -message '✔️Claude Code Subagent Stopped' -subtitle \"\" -sound Glass"
           }
         ]
       }
