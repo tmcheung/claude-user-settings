@@ -1,23 +1,25 @@
 {
-  "permissions": {
-    "allow": [
-      "Bash(find:*)",
-      "Bash(gh pr:*)",
-      "Bash(git checkout:*)",
-      "Bash(git commit:*)",
-      "Bash(git push:*)",
-      "Bash(sbt:*)",
-      "Edit",
-      "MultiEdit",
-      "WebFetch",
-      "Write"
-    ],
-    "deny": []
-  },
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "feedbackSurveyState": {
-    "lastShownTime": 1753986590084
+    "lastShownTime": 1754290353394
   },
-  "hooks": {
+  "model": "opusplan",
+  "permissions": {
+      "allow": [
+        "Bash(find:*)",
+        "Bash(gh pr:*)",
+        "Bash(git checkout:*)",
+        "Bash(git commit:*)",
+        "Bash(git push:*)",
+        "Bash(sbt:*)",
+        "Edit",
+        "MultiEdit",
+        "WebFetch",
+        "Write"
+      ],
+      "deny": []
+    },
+    "hooks": {
     "Notification": [
       {
         "matcher": "",

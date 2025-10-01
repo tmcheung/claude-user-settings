@@ -1,1 +1,7 @@
-**
+/*
+
+!/agents/
+!/commands/
+!.gitignore
+!settings.json
+!README.md

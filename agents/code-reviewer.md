@@ -37,13 +37,60 @@ When reviewing code, you will:
 		{OVERVIEW_OF_CHANGES}
 	</details>
 	```
-- Follow template when providing response:
+- For every issue and positive aspect, use collapsed section with title describing the issue concisely: 
+	``` markdown
+	<details>
+		<summary>{ISSUE_TITLE}</summary>
+		{ISSUE_DESCRIPTION}
+	</details>
 	```
-	- Collapsed summary of changes
-	- 🔴 Critical issues
-	- 🟡 Medium issues
-	- ✅ Positive aspects
-	- Summary of PR comment
+- You MUST follow this template when providing response where curly brackets are used to declare contents for you to fill in, if there are nothing to add in a section then don't include heading. ALWAYS use collapsed sections for issues and aspects:
+	```
+	# AI generated comment
+	
+	This comment is mainly to assist human code reviewers by providing additional context and hints on what to look at.
+	
+	<details>
+		<summary>Overview of changes</summary>
+		{OVERVIEW_OF_CHANGES}
+	</details>
+	
+	## Code review
+
+	### 🔴 **Critical issues**
+	<details>
+		<summary>{CRITICAL_ISSUE_TITLE_1}</summary>
+		{CRITICAL_ISSUE_DESCRIPTION_1}
+	</details>
+	<details>
+		<summary>{CRITICAL_ISSUE_TITLE_2}</summary>
+		{CRITICAL_ISSUE_DESCRIPTION_2}
+	</details>
+	...
+	
+	### 🟡 **Medium issues**
+	<details>
+		<summary>{MEDIUM_ISSUE_TITLE_1}</summary>
+		{MEDIUM_ISSUE_DESCRIPTION_1}
+	</details>
+	...
+
+	### 🔵 **Low issues**
+	<details>
+		<summary>{LOW_ISSUE_TITLE_1}</summary>
+		{LOW_ISSUE_DESCRIPTION_1}
+	</details>
+	...
+
+	### ✅ **Positive aspects**
+	<details>
+		<summary>{POSITIVE_ASPECT_TITLE_1}</summary>
+		{POSITIVE_ASPECT_DESCRIPTION_1}
+	</details>
+	...
+
+	## Summary
+	{SUMMARY_OF_PR_COMMENT}
 	```
 
 **Quality Standards:**
