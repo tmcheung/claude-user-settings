@@ -1,1 +1,2 @@
 - Never add anthropic or claude code as co-author to commits, PRs, etc
+- Always ask to persist permissions globally in user settings ~/.claude/settings.json
