@@ -19,7 +19,13 @@
       ],
       "deny": []
     },
-    "hooks": {
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh",
+    "padding": 0
+  },
+  "alwaysThinkingEnabled": false,
+  "hooks": {
     "Notification": [
       {
         "matcher": "",
