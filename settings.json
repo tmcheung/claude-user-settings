@@ -9,15 +9,8 @@
     "DISABLE_TELEMETRY": "1",
     "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "1",
     "DISABLE_PROMPT_CACHING": "1",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-1@20250805",
     "VERTEX_REGION_CLAUDE_4_0_OPUS": "us-east5",
-    "VERTEX_REGION_CLAUDE_4_1_OPUS": "us-east5",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-4@20250514",
-    "VERTEX_REGION_CLAUDE_3_5_SONNET": "europe-west1",
-    "VERTEX_REGION_CLAUDE_3_7_SONNET": "europe-west1",
-    "VERTEX_REGION_CLAUDE_4_0_SONNET": "europe-west1",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-3-5-haiku@20241022",
-    "VERTEX_REGION_CLAUDE_3_5_HAIKU": "europe-west1"
+    "VERTEX_REGION_CLAUDE_4_1_OPUS": "us-east5"
   },
   "permissions": {
     "allow": [
@@ -36,7 +29,6 @@
     ],
     "deny": []
   },
-  "model": "opusplan",
   "hooks": {
     "Notification": [
       {
@@ -79,6 +71,5 @@
   },
   "feedbackSurveyState": {
     "lastShownTime": 1754290353394
-  },
-  "alwaysThinkingEnabled": false
+  }
 }
