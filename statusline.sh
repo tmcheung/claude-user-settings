@@ -18,6 +18,14 @@ CURRENT_DIR=$(get_current_dir)
 PROJECT_DIR=$(get_project_dir)
 COST=$(get_cost)
 DURATION=$(get_duration)
+GIT_BRANCH=""
+
+if git rev-parse --git-dir > /dev/null 2>&1; then
+    BRANCH=$(git branch --show-current 2>/dev/null)
+    if [ -n "$BRANCH" ]; then
+        GIT_BRANCH=" | 🌿 $BRANCH"
+    fi
+fi
 
 # Format directory display
 if [ "$CURRENT_DIR" = "$PROJECT_DIR" ]; then
@@ -35,4 +43,4 @@ COST_FORMATTED=$(printf "%.1f" "$COST")
 DURATION_SEC=$(echo "scale=0; $DURATION / 1000" | bc 2>/dev/null || echo "0")
 
 # Create sleek status line with colors
-printf "\033[36m⚡ %s\033[0m \033[33m📁 %s\033[0m \033[32m💰 \$%s\033[0m \033[35m⏱️ %ss\033[0m\n" "$MODEL" "$DIR_DISPLAY" "$COST_FORMATTED" "$DURATION_SEC" 
+printf "\033[36m⚡ %s\033[0m \033[33m📁 %s\033[0m \033[32m💰 \$%s\033[0m \033[35m⏱️ %ss\033[0m %s\033[0m\n" "$MODEL" "$DIR_DISPLAY" "$COST_FORMATTED" "$DURATION_SEC" "$GIT_BRANCH"
