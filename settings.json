@@ -31,7 +31,7 @@
       "Bash(cat:*)",
       "mcp__atlassian__getAccessibleAtlassianResources",
       "mcp__atlassian__getVisibleJiraProjects",
-      "mcp__atlassian__getJiraIssue",
+      "mcp__atlassian__getJiraIssue"
     ],
     "deny": []
   },
