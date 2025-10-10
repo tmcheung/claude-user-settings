@@ -14,18 +14,24 @@
   },
   "permissions": {
     "allow": [
+      "Edit",
+      "MultiEdit",
+      "WebFetch",
+      "Write",
       "Bash(find:*)",
       "Bash(gh pr:*)",
       "Bash(git checkout:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git log:*)",
       "Bash(sbt:*)",
-      "Edit",
-      "MultiEdit",
-      "WebFetch",
-      "Write",
+      "Bash(mcp:*)",
+      "Bash(pnpm:*)",
+      "Bash(cat:*)",
       "mcp__atlassian__getAccessibleAtlassianResources",
-      "mcp__atlassian__getVisibleJiraProjects"
+      "mcp__atlassian__getVisibleJiraProjects",
+      "mcp__atlassian__getJiraIssue",
     ],
     "deny": []
   },
@@ -71,5 +77,6 @@
   },
   "feedbackSurveyState": {
     "lastShownTime": 1754290353394
-  }
+  },
+  "alwaysThinkingEnabled": true
 }

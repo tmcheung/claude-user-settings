@@ -1,1 +1,1 @@
-Use the subagent pr-composer to create a pull request with the committed changes
+Use the subagent pr-composer to create a pull request with the committed changes, if currently on the `main` or `master` branch then create a new branch with a fitting name (using jira issue, description of changes, etc.)
