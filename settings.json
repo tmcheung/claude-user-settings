@@ -20,11 +20,13 @@
       "Write",
       "Bash(find:*)",
       "Bash(gh pr:*)",
+      "Bash(gh issue:*)",
       "Bash(git checkout:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(git add:*)",
       "Bash(git log:*)",
+      "Bash(./gradlew :*)",
       "Bash(sbt:*)",
       "Bash(mcp:*)",
       "Bash(pnpm:*)",
@@ -75,8 +77,8 @@
     "command": "~/.claude/statusline.sh",
     "padding": 0
   },
+  "alwaysThinkingEnabled": false,
   "feedbackSurveyState": {
     "lastShownTime": 1754290353394
-  },
-  "alwaysThinkingEnabled": true
+  }
 }
