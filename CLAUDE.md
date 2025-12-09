@@ -1,2 +1,3 @@
 - Never add anthropic or claude code as co-author to commits, PRs, etc
 - Always ask to persist permissions globally in user settings ~/.claude/settings.json
+- If anything that looks like a jira issue is mentioned, look it up using Atlassian CLI `acli`. My jira issue codes look like "MIT-<ISSUE_NUMBER>"

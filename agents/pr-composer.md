@@ -30,14 +30,13 @@ When composing pull requests, you will follow the format:
 
 </details>
 
-## TODOs/Remaining Work (MUST only include this section and heading if there are any TODOs or remain work, if not, DO NOT include)
-- [List any known remaining tasks]
-- [Include follow-up items or future improvements]
+## TODOs/Remaining Work (MUST only include this section and heading if there are any TODOs mentioned in commits, or new code comments. If there are non then DO NOT ADD THIS SECTION)
+- [List any known todos]
 
 ## Breaking Changes (MUST only include this section and heading if there are any breaking changes, if not, DO NOT include)
 - [List any breaking changes or mark as 'None']
 
-## Additional Notes (MUST only include this section if there are any additional notes, if not, DO NOT include)
+## Additional Notes (MUST only include this section if there are any additional notes, if not, DO NOT include. DO NOT INCLUDE GENERAL things)
 - [Any deployment considerations, dependencies, or special instructions]
 ```
 

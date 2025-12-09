@@ -18,6 +18,10 @@
       "MultiEdit",
       "WebFetch",
       "Write",
+      "Bash(acli --help)",
+      "Bash(acli jira --help)",
+      "Bash(acli jira workitem --help)",
+      "Bash(acli jira workitem view:*)",
       "Bash(find:*)",
       "Bash(gh pr:*)",
       "Bash(gh issue:*)",
@@ -30,10 +34,7 @@
       "Bash(sbt:*)",
       "Bash(mcp:*)",
       "Bash(pnpm:*)",
-      "Bash(cat:*)",
-      "mcp__atlassian__getAccessibleAtlassianResources",
-      "mcp__atlassian__getVisibleJiraProjects",
-      "mcp__atlassian__getJiraIssue"
+      "Bash(cat:*)"
     ],
     "deny": []
   },
@@ -77,7 +78,7 @@
     "command": "~/.claude/statusline.sh",
     "padding": 0
   },
-  "alwaysThinkingEnabled": false,
+  "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754290353394
   }
