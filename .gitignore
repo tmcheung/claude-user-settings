@@ -2,6 +2,7 @@
 
 !/agents/
 !/commands/
+!/skills/
 !.gitignore
 !settings.json
 !README.md
