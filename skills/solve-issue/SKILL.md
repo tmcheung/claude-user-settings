@@ -2,7 +2,7 @@
 name: solve-issue
 description: Solve jira issue
 argument-hint: [jira-issue]
-disable-model-invocation: true
+disable-model-invocation: false
 ---
 
 Read jira issue #$1 using Atlassian CLI `acli` (or MCP server if `acli` not available but MCP is setup) and then solve it. If no jira issue is submitted, ask user for it. If jira issue is already completed then tell the user about it. If the description is unclear, ask clarifying questions.
