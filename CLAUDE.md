@@ -1,3 +1,5 @@
 - Never add anthropic or claude code as co-author to commits, PRs, etc
 - Always ask to persist permissions globally in user settings ~/.claude/settings.json
 - If anything that looks like a jira issue is mentioned, look it up using Atlassian CLI `acli`. My jira issue codes look like "MIT-<ISSUE_NUMBER>"
+- When planning, always write a planning markdown file in the current working directory, or at least ask if permissions are lacking. When editing prioritize the planning markdown file as it might have adjustments to the original suggested plan.
+- Always prefer patterns without side effects (immutability, etc.)

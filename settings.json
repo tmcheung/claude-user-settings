@@ -10,7 +10,9 @@
     "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "1",
     "DISABLE_PROMPT_CACHING": "1",
     "VERTEX_REGION_CLAUDE_4_0_OPUS": "us-east5",
-    "VERTEX_REGION_CLAUDE_4_1_OPUS": "us-east5"
+    "VERTEX_REGION_CLAUDE_4_1_OPUS": "us-east5",
+    "VERTEX_REGION_CLAUDE_4_6_OPUS": "us-east5",
+    "VERTEX_REGION_CLAUDE_4_6_SONNET": "europe-west1"
   },
   "permissions": {
     "allow": [
@@ -22,6 +24,9 @@
       "Bash(acli jira --help)",
       "Bash(acli jira workitem --help)",
       "Bash(acli jira workitem view:*)",
+      "Bash(acli jira issue view:*)",
+      "Bash(xargs cat:*)",
+      "Bash(./gradlew:*)",
       "Bash(find:*)",
       "Bash(gh pr:*)",
       "Bash(gh issue:*)",
@@ -30,13 +35,28 @@
       "Bash(git push:*)",
       "Bash(git add:*)",
       "Bash(git log:*)",
+      "Bash(git stash:*)",
+      "Bash(git restore:*)",
       "Bash(./gradlew :*)",
       "Bash(sbt:*)",
       "Bash(mcp:*)",
       "Bash(pnpm:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(./gradlew :consumer:test:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(./gradlew :api-server:compileKotlin:*)",
+      "Bash(./gradlew :api-server:test:*)",
+      "Bash(./gradlew test:*)",
+      "Bash(acli issue:*)",
+      "Bash(acli issue view:*)",
+      "Bash(chmod:*)"
     ],
     "deny": []
+  },
+  "model": "claude-opus-4-6",
+  "planMode": {
+    "model": "claude-opus-4-6"
   },
   "hooks": {
     "Notification": [
@@ -77,6 +97,25 @@
     "type": "command",
     "command": "~/.claude/statusline.sh",
     "padding": 0
+  },
+  "enabledPlugins": {
+    "aurora-k8s-inspector@vend-plugins": true,
+    "code-search@vend-plugins": true,
+    "developer-documentation@vend-plugins": true,
+    "google-workspace@vend-plugins": true,
+    "jira@vend-plugins": true,
+    "meta@vend-plugins": true,
+    "observability@vend-plugins": true,
+    "safety-hooks@vend-plugins": true,
+    "unleash@vend-plugins": true,
+    "workplace@vend-plugins": true,
+    "context7@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "plugin-dev@claude-plugins-official": true
   },
   "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {
