@@ -81,17 +81,6 @@
         ]
       }
     ],
-    "SubagentStop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "terminal-notifier -group 'CLAUDE_CODE' -message '✔️Claude Code Subagent Stopped' -subtitle \"\" -sound Glass"
-          }
-        ]
-      }
-    ]
   },
   "statusLine": {
     "type": "command",
